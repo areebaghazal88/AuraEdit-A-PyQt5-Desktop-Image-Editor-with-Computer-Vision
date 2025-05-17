@@ -936,23 +936,7 @@ class AuraEdit(QMainWindow):
             self.ui.imageLabel.setPixmap(scaled_pixmap)
             print(f"Zoom applied with scale factor: {scale_factor}")
    
-        # Hide certain widgets initially
-        
-        # # Example button configuration
-        # self.configure_button_with_menu(self.ui.size1_pushButton, ["Move", "Crop", "Resizing"])
-        # self.configure_button_with_menu(self.ui.adjust1_pushButton, ["Brightness", "Contrast", "Saturation"])
-        # self.configure_button_with_menu(self.ui.select1_pushButton, ["Select Subject", "Object Selection"])
-        # self.configure_button_with_menu(self.ui.retouch1_pushButton, ["Lighten", "Darken"])
-        # self.configure_button_with_menu(self.ui.quickaction1_pushButton, ["Remove background", "Blur background", "Black/White background"])
-        # self.configure_button_with_menu(self.ui.paint1_pushButton, ["Brush", "Eraser"])
-        # self.configure_button_with_menu(self.ui.transform1_pushButton, ["Rotation", "Translation"])
 
-      
-
- 
-        # self.ui.actionGuassian_blur.clicked.connect(lambda: self.on_filter_selected("Gaussian Blur", {"Kernel Size": 5, "Sigma": 1.5}))
-        # self.ui.sharpen_button.clicked.connect(lambda: self.on_filter_selected("Sharpen", {"Intensity": 3}))
-    
     def add_filter_to_tree(self, filter_name, parameters):
         """Dynamically add or update a filter and its parameters in the tree widget."""
         # Clear existing tree items (optional if you want to refresh)
@@ -1102,65 +1086,6 @@ class AuraEdit(QMainWindow):
         else:
             QtWidgets.QMessageBox.warning(self, "Error", f"No parameters provided for '{filter_name}'.")
 
-    # def configure_button_with_menu(self, button, menu_items):
-    #     """Configures a button to show a context menu on hover."""
-    #     try:
-    #         # Install event filter to detect hover events
-    #         button.installEventFilter(self)
-
-    #         # Store the menu items for later use
-    #         button.menu_items = menu_items
-    #         button.menu_timer = None  # Initialize a QTimer for automatic menu hiding
-    #     except Exception as e:
-    #         print(f"Error configuring button with menu: {e}")
-
-
-    # def show_context_menu(self, button, menu_items, position):
-    #     """Displays a temporary context menu for the given button at the specified position."""
-    #     if not hasattr(button, "context_menu") or button.context_menu is None:
-    #         button.context_menu = QMenu(self)
-    #         button.context_menu.setStyleSheet("""
-    #             QMenu {
-    #                 background-color: rgb(53,53,53);
-    #                 color: white;
-    #             }
-    #             QMenu::item:selected {
-    #                 background-color: rgb(80, 80, 80);
-    #                 color: rgb(255, 167, 135);
-    #             }
-    #         """)
-    #         # Add actions to the menu
-    #         for item_text in menu_items:
-    #             action = QAction(item_text, self)
-    #             action.triggered.connect(lambda _, t=item_text: print(f"Selected: {t}"))
-    #             button.context_menu.addAction(action)
-
-    #     # Show the menu at the given position
-    #     button.context_menu.move(button.mapToGlobal(position))
-    #     button.context_menu.show()
-
-    #     # Set a timer to hide the menu if the cursor moves away
-    #     if button.menu_timer is None:
-    #         button.menu_timer = QTimer(self)
-    #         button.menu_timer.setSingleShot(True)
-    #         button.menu_timer.timeout.connect(lambda: self.hide_context_menu(button))
-    #     button.menu_timer.start(1500)  # Adjust the timeout (300ms) to control how long it stays visible
-
-
-    # def hide_context_menu(self, button):
-    #     """Hides the context menu if it's visible."""
-    #     if hasattr(button, "context_menu") and button.context_menu is not None:
-    #         button.context_menu.hide()
-
-
-    # def eventFilter(self, obj, event):
-        # """Handles hover events to trigger and hide context menus."""
-        # if hasattr(obj, "menu_items"):
-        #     if event.type() == QtCore.QEvent.HoverEnter:
-        #         self.show_context_menu(obj, obj.menu_items, obj.rect().bottomLeft())
-        #     elif event.type() == QtCore.QEvent.HoverLeave:
-        #         self.hide_context_menu(obj)  # Hide the menu immediately on hover leave
-        # return super().eventFilter(obj, event)
 
     def update_properties(self, pixmap, file_name):
         """Update the property widgets with the image details."""
