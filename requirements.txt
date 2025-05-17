@@ -1,0 +1,7 @@
+PyQt5>=5.15
+Pillow
+numpy
+opencv-python
+torch
+torchvision
+scipy
