@@ -1,4 +1,4 @@
-AuraEdit - Computer Vision Image Editor with PyQt5 and Qt Designer
+# AuraEdit - Computer Vision Image Editor with PyQt5 and Qt Designer
 
 AuraEdit is a desktop image processing application built using **PyQt5** and designed with **Qt Designer**. It leverages powerful computer vision libraries such as **OpenCV**, **Pillow**, and **PyTorch** to provide a variety of image editing and enhancement features through an easy-to-use graphical interface.
 
