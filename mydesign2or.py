@@ -14,8 +14,6 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QSizePolicy
 
 
-
-
 class Ui_AuraEdit(object):
     def setupUi(self, AuraEdit):
           # Explicitly set the window title
@@ -80,33 +78,7 @@ class Ui_AuraEdit(object):
         self.verticalLayout_17 = QtWidgets.QVBoxLayout()
         self.verticalLayout_17.setContentsMargins(0, 15, -1, -1)
         self.verticalLayout_17.setObjectName("verticalLayout_17")
-#         self.size1_pushButton = QtWidgets.QPushButton(self.tools_widget)
-#         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
-#         sizePolicy.setHorizontalStretch(0)
-#         sizePolicy.setVerticalStretch(0)
-#         sizePolicy.setHeightForWidth(self.size1_pushButton.sizePolicy().hasHeightForWidth())
-#         self.size1_pushButton.setSizePolicy(sizePolicy)
-#         self.size1_pushButton.setStyleSheet("QWidget{\n"
-# "    background-color: rgb(53, 53, 53);\n"
-# "}\n"
-# "QPushButton:hover{\n"
-# "    background-color: rgb(80, 80, 80);\n"
-# "   border-radius:5px;\n"
-# "}\n"
-# "QPushButton{\n"
-# "    height:10px;\n"
-# "}\n"
-# "")
-#         self.size1_pushButton.setText("")
-#         icon = QtGui.QIcon()
-#         icon.addPixmap(QtGui.QPixmap("icon/selectcursor.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-#         self.size1_pushButton.setIcon(icon)
-#         self.size1_pushButton.setIconSize(QtCore.QSize(30, 30))
-#         self.size1_pushButton.setCheckable(True)
-#         self.size1_pushButton.setAutoExclusive(True)
-#         self.size1_pushButton.setFlat(True)
-#         self.size1_pushButton.setObjectName("size1_pushButton")
-#         self.verticalLayout_17.addWidget(self.size1_pushButton)
+
         self.adjust1_pushButton = QtWidgets.QPushButton(self.tools_widget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -127,26 +99,6 @@ class Ui_AuraEdit(object):
         self.adjust1_pushButton.setFlat(True)
         self.adjust1_pushButton.setObjectName("adjust1_pushButton")
         self.verticalLayout_17.addWidget(self.adjust1_pushButton)
-#         self.select1_pushButton = QtWidgets.QPushButton(self.tools_widget)
-#         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
-#         sizePolicy.setHorizontalStretch(0)
-#         sizePolicy.setVerticalStretch(0)
-#         sizePolicy.setHeightForWidth(self.select1_pushButton.sizePolicy().hasHeightForWidth())
-#         self.select1_pushButton.setSizePolicy(sizePolicy)
-#         self.select1_pushButton.setStyleSheet("QPushButton:hover{\n"
-# "    background-color: rgb(80, 80, 80);\n"
-# "   border-radius:5px;\n"
-# "}")
-#         self.select1_pushButton.setText("")
-#         icon2 = QtGui.QIcon()
-#         icon2.addPixmap(QtGui.QPixmap("icon/icons8-page-size-50.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-#         self.select1_pushButton.setIcon(icon2)
-#         self.select1_pushButton.setIconSize(QtCore.QSize(30, 30))
-#         self.select1_pushButton.setCheckable(True)
-#         self.select1_pushButton.setAutoExclusive(True)
-#         self.select1_pushButton.setFlat(True)
-#         self.select1_pushButton.setObjectName("select1_pushButton")
-#         self.verticalLayout_17.addWidget(self.select1_pushButton)
         self.retouch1_pushButton = QtWidgets.QPushButton(self.tools_widget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -247,26 +199,6 @@ class Ui_AuraEdit(object):
         self.text1_pushButton.setFlat(True)
         self.text1_pushButton.setObjectName("text1_pushButton")
         self.verticalLayout_17.addWidget(self.text1_pushButton)
-#         self.shape1_pushButton = QtWidgets.QPushButton(self.tools_widget)
-#         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
-#         sizePolicy.setHorizontalStretch(0)
-#         sizePolicy.setVerticalStretch(0)
-#         sizePolicy.setHeightForWidth(self.shape1_pushButton.sizePolicy().hasHeightForWidth())
-#         self.shape1_pushButton.setSizePolicy(sizePolicy)
-#         self.shape1_pushButton.setStyleSheet("QPushButton:hover{\n"
-# "    background-color: rgb(80, 80, 80);\n"
-# "   border-radius:5px;\n"
-# "}")
-#         self.shape1_pushButton.setText("")
-#         icon8 = QtGui.QIcon()
-#         icon8.addPixmap(QtGui.QPixmap("icon/shapes.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-#         self.shape1_pushButton.setIcon(icon8)
-#         self.shape1_pushButton.setIconSize(QtCore.QSize(30, 30))
-#         self.shape1_pushButton.setCheckable(True)
-#         self.shape1_pushButton.setAutoExclusive(True)
-#         self.shape1_pushButton.setFlat(True)
-#         self.shape1_pushButton.setObjectName("shape1_pushButton")
-#         self.verticalLayout_17.addWidget(self.shape1_pushButton)
         self.verticalLayout_22.addLayout(self.verticalLayout_17)
         spacerItem1 = QtWidgets.QSpacerItem(20, 88, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.verticalLayout_22.addItem(spacerItem1)
@@ -331,138 +263,7 @@ class Ui_AuraEdit(object):
         self.verticalLayout_16.setContentsMargins(-1, 15, -1, -1)
         self.verticalLayout_16.setSpacing(22)
         self.verticalLayout_16.setObjectName("verticalLayout_16")
-        # self.size_frame_2 = QtWidgets.QFrame(self.tools_widget_2)
-        # font = QtGui.QFont()
-        # font.setFamily("Arial")
-        # self.size_frame_2.setFont(font)
-        # self.size_frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        # self.size_frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
-        # self.size_frame_2.setObjectName("size_frame_2")
-        # self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.size_frame_2)
-        # self.verticalLayout_5.setContentsMargins(0, 0, 0, 0)
-        # self.verticalLayout_5.setSpacing(0)
-        # self.verticalLayout_5.setObjectName("verticalLayout_5")
-#         self.size2_pushButton = QtWidgets.QPushButton(self.size_frame_2)
-#         font = QtGui.QFont()
-#         font.setFamily("Arial")
-#         font.setPointSize(8)
-#         font.setBold(True)
-#         font.setWeight(75)
-#         self.size2_pushButton.setFont(font)
-#         self.size2_pushButton.setStyleSheet("QPushButton{\n"
-# "border:none;\n"
-# " outline: none;\n"
-# "}\n"
-# "QPushButton {\n"
-# "    height:25px;\n"
-# "    text-align: left;}\n"
-# "QPushButton:hover{\n"
-# "    background-color: rgb(80, 80, 80);\n"
-# "   border-radius:5px;\n"
-# "}")
-#         icon9 = QtGui.QIcon()
-#         icon9.addPixmap(QtGui.QPixmap("icon/icons8-chevron-24.png"), QtGui.QIcon.Normal, QtGui.QIcon.On)
-#         icon9.addPixmap(QtGui.QPixmap("icon/selectcursor.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-#         self.size2_pushButton.setIcon(icon9)
-#         self.size2_pushButton.setIconSize(QtCore.QSize(30, 30))
-#         self.size2_pushButton.setCheckable(True)
-#         self.size2_pushButton.setAutoExclusive(False)
-#         self.size2_pushButton.setFlat(True)
-#         self.size2_pushButton.setChecked(True)
-#         self.size2_pushButton.setObjectName("size2_pushButton")
-#         self.verticalLayout_5.addWidget(self.size2_pushButton)
-#         self.size_dropdown = QtWidgets.QFrame(self.size_frame_2)
-#         self.size_dropdown.setFrameShape(QtWidgets.QFrame.StyledPanel)
-#         self.size_dropdown.setFrameShadow(QtWidgets.QFrame.Raised)
-#         self.size_dropdown.setObjectName("size_dropdown")
-#         self.verticalLayout = QtWidgets.QVBoxLayout(self.size_dropdown)
-#         self.verticalLayout.setContentsMargins(0, 5, 0, 0)
-#         self.verticalLayout.setSpacing(4)
-#         self.verticalLayout.setObjectName("verticalLayout")
-#         self.move = QtWidgets.QPushButton(self.size_dropdown)
-#         font = QtGui.QFont()
-#         font.setFamily("Arial")
-#         font.setPointSize(8)
-#         self.move.setFont(font)
-#         self.move.setStyleSheet("QPushButton {\n"
-# "    text-align: left;\n"
-# "    padding-left: 25px; /* Optional: Adjust padding as needed */\n"
-# "     height:25px;\n"
-# "}\n"
-# "QPushButton:hover{\n"
-# "    color: rgb(255, 167, 135);\n"
-# "    background-color: rgb(80, 80, 80);\n"
-# "   border-radius:5px;\n"
-# "}\n"
-# "QPushButton{\n"
-# "border:none;\n"
-# " outline: none;\n"
-# "}")
-#         icon10 = QtGui.QIcon()
-#         icon10.addPixmap(QtGui.QPixmap("icon/icons8-move-30.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-#         self.move.setIcon(icon10)
-#         self.move.setIconSize(QtCore.QSize(30, 30))
-#         self.move.setCheckable(True)
-#         self.move.setFlat(True)
-#         self.move.setObjectName("move")
-#         self.verticalLayout.addWidget(self.move)
-#         self.crop = QtWidgets.QPushButton(self.size_dropdown)
-#         font = QtGui.QFont()
-#         font.setFamily("Arial")
-#         font.setPointSize(8)
-#         self.crop.setFont(font)
-#         self.crop.setStyleSheet("QPushButton {\n"
-# "     height:25px;\n"
-# "    text-align: left;\n"
-# "    padding-left: 25px; /* Optional: Adjust padding as needed */\n"
-# "}\n"
-# "\n"
-# "QPushButton:hover{\n"
-# "    color: rgb(255, 167, 135);\n"
-# "    background-color: rgb(80, 80, 80);\n"
-# "   border-radius:5px;\n"
-# "}\n"
-# "QPushButton{\n"
-# "border:none;\n"
-# " outline: none;\n"
-# "}")
-#         icon11 = QtGui.QIcon()
-#         icon11.addPixmap(QtGui.QPixmap("icon/icons8-crop-50.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-#         self.crop.setIcon(icon11)
-#         self.crop.setIconSize(QtCore.QSize(25, 25))
-#         self.crop.setCheckable(True)
-#         self.crop.setFlat(True)
-#         self.crop.setObjectName("crop")
-#         self.verticalLayout.addWidget(self.crop)
-#         self.resizing = QtWidgets.QPushButton(self.size_dropdown)
-#         font = QtGui.QFont()
-#         font.setFamily("Arial")
-#         font.setPointSize(8)
-#         self.resizing.setFont(font)
-#         self.resizing.setStyleSheet("QPushButton {\n"
-# "    text-align: left;\n"
-# "    padding-left: 25px; /* Optional: Adjust padding as needed */\n"
-# "    height:25px;\n"
-# "}\n"
-# "QPushButton:hover{\n"
-# "    color: rgb(255, 167, 135);\n"
-# "    background-color: rgb(80, 80, 80);\n"
-# "   border-radius:5px;\n"
-# "}\n"
-# "QPushButton{\n"
-# "border:none;\n"
-# " outline: none;\n"
-# "}")
-#         icon12 = QtGui.QIcon()
-#         icon12.addPixmap(QtGui.QPixmap("icon/icons8-resize-50.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-#         self.resizing.setIcon(icon12)
-#         self.resizing.setIconSize(QtCore.QSize(30,30 ))
-#         self.resizing.setCheckable(True)
-#         self.resizing.setFlat(True)
-#         self.resizing.setObjectName("resizing")
-#         self.verticalLayout.addWidget(self.resizing)
-        # self.verticalLayout_5.addWidget(self.size_dropdown)
-        # self.verticalLayout_16.addWidget(self.size_frame_2)
+       
         self.Adjust_frame = QtWidgets.QFrame(self.tools_widget_2)
         self.Adjust_frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.Adjust_frame.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -567,107 +368,6 @@ class Ui_AuraEdit(object):
         self.verticalLayout_4.addWidget(self.saturation)
         self.verticalLayout_6.addWidget(self.adjust_dropdown)
         self.verticalLayout_16.addWidget(self.Adjust_frame)
-#         self.select_frame_8 = QtWidgets.QFrame(self.tools_widget_2)
-#         self.select_frame_8.setFrameShape(QtWidgets.QFrame.StyledPanel)
-#         self.select_frame_8.setFrameShadow(QtWidgets.QFrame.Raised)
-#         self.select_frame_8.setObjectName("select_frame_8")
-#         self.verticalLayout_19 = QtWidgets.QVBoxLayout(self.select_frame_8)
-#         self.verticalLayout_19.setContentsMargins(0, 0, 0, 0)
-#         self.verticalLayout_19.setSpacing(0)
-#         self.verticalLayout_19.setObjectName("verticalLayout_19")
-#         self.select2_pushButton = QtWidgets.QPushButton(self.select_frame_8)
-#         font = QtGui.QFont()
-#         font.setFamily("Arial")
-#         font.setPointSize(8)
-#         font.setBold(True)
-#         font.setWeight(75)
-#         self.select2_pushButton.setFont(font)
-#         self.select2_pushButton.setStyleSheet("QPushButton {\n"
-# "     height:25px;\n"
-# "    text-align: left;}\n"
-# "QPushButton:hover{\n"
-# "    background-color: rgb(80, 80, 80);\n"
-# "   border-radius:5px;\n"
-# "}\n"
-# "QPushButton{\n"
-# "border:none;\n"
-# " outline: none;\n"
-# "}")
-#         icon16 = QtGui.QIcon()
-#         icon16.addPixmap(QtGui.QPixmap("icon/icons8-chevron-24.png"), QtGui.QIcon.Normal, QtGui.QIcon.On)
-#         icon16.addPixmap(QtGui.QPixmap("icon/icons8-page-size-50.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-#         self.select2_pushButton.setIcon(icon16)
-#         self.select2_pushButton.setIconSize(QtCore.QSize(25, 25))
-#         self.select2_pushButton.setCheckable(True)
-#         self.select2_pushButton.setAutoExclusive(False)
-#         self.select2_pushButton.setFlat(True)
-#         self.select2_pushButton.setChecked(True)
-#         self.select2_pushButton.setObjectName("select2_pushButton")
-#         self.verticalLayout_19.addWidget(self.select2_pushButton)
-#         self.select_dropdown = QtWidgets.QFrame(self.select_frame_8)
-#         self.select_dropdown.setFrameShape(QtWidgets.QFrame.StyledPanel)
-#         self.select_dropdown.setFrameShadow(QtWidgets.QFrame.Raised)
-#         self.select_dropdown.setObjectName("select_dropdown")
-#         self.verticalLayout_8 = QtWidgets.QVBoxLayout(self.select_dropdown)
-#         self.verticalLayout_8.setContentsMargins(0, 5, 0, 0)
-#         self.verticalLayout_8.setSpacing(4)
-#         self.verticalLayout_8.setObjectName("verticalLayout_8")
-#         self.select_subject = QtWidgets.QPushButton(self.select_dropdown)
-#         font = QtGui.QFont()
-#         font.setFamily("Arial")
-#         font.setPointSize(8)
-#         self.select_subject.setFont(font)
-#         self.select_subject.setStyleSheet("QPushButton {\n"
-# "     height:25px;\n"
-# "    text-align: left;\n"
-# "    padding-left: 25px; /* Optional: Adjust padding as needed */\n"
-# "}\n"
-# "QPushButton:hover{\n"
-# "    color: rgb(255, 167, 135);\n"
-# "    background-color: rgb(80, 80, 80);\n"
-# "   border-radius:5px;\n"
-# "}\n"
-# "QPushButton{\n"
-# "border:none;\n"
-# " outline: none;\n"
-# "}")
-        icon17 = QtGui.QIcon()
-        icon17.addPixmap(QtGui.QPixmap("icon/icons8-invert-selection-30.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-#         self.select_subject.setIcon(icon17)
-#         self.select_subject.setIconSize(QtCore.QSize(30, 30))
-#         self.select_subject.setCheckable(True)
-#         self.select_subject.setFlat(True)
-#         self.select_subject.setObjectName("select_subject")
-#         self.verticalLayout_8.addWidget(self.select_subject)
-#         self.object_selection = QtWidgets.QPushButton(self.select_dropdown)
-#         font = QtGui.QFont()
-#         font.setFamily("Arial")
-#         font.setPointSize(8)
-#         self.object_selection.setFont(font)
-#         self.object_selection.setStyleSheet("QPushButton {\n"
-# "     height:25px;\n"                                            
-# "    text-align: left;\n"
-# "    padding-left: 25px; /* Optional: Adjust padding as needed */\n"
-# "}\n"
-# "QPushButton:hover{\n"
-# "    color: rgb(255, 167, 135);\n"
-# "    background-color: rgb(80, 80, 80);\n"
-# "   border-radius:5px;\n"
-# "}\n"
-# "QPushButton{\n"
-# "border:none;\n"
-# " outline: none;\n"
-# "}")
-#         icon18 = QtGui.QIcon()
-#         icon18.addPixmap(QtGui.QPixmap("icon/icons8-object-rotation-50.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-#         self.object_selection.setIcon(icon18)
-#         self.object_selection.setIconSize(QtCore.QSize(30, 30))
-#         self.object_selection.setCheckable(True)
-#         self.object_selection.setFlat(True)
-#         self.object_selection.setObjectName("object_selection")
-#         self.verticalLayout_8.addWidget(self.object_selection)
-#         self.verticalLayout_19.addWidget(self.select_dropdown)
-#         self.verticalLayout_16.addWidget(self.select_frame_8)
         self.retouch_frame_9 = QtWidgets.QFrame(self.tools_widget_2)
         self.retouch_frame_9.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.retouch_frame_9.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -1133,33 +833,6 @@ class Ui_AuraEdit(object):
         self.text2_PushButton.setFlat(True)
         self.text2_PushButton.setObjectName("text2_PushButton")
         self.verticalLayout_16.addWidget(self.text2_PushButton)
-        # self.shapes2_pushButton = QtWidgets.QPushButton(self.tools_widget_2)
-        # self.shapes2_pushButton.setEnabled(True)
-        # font = QtGui.QFont()
-        # font.setFamily("Arial")
-        # font.setPointSize(8)
-        # font.setBold(True)
-        # font.setWeight(75)
-#         self.shapes2_pushButton.setFont(font)
-#         self.shapes2_pushButton.setStyleSheet("QPushButton {\n"
-# "     height:25px;\n"
-# "    text-align: left;}\n"
-# "QPushButton:hover{\n"
-# "    background-color: rgb(80, 80, 80);\n"
-# "   border-radius:5px;\n"
-# "}\n"
-# "QPushButton{\n"
-# "border:none;\n"
-# " outline: none;\n"
-# "\n"
-# "}")
-        # self.shapes2_pushButton.setIcon(icon8)
-        # self.shapes2_pushButton.setIconSize(QtCore.QSize(30, 30))
-        # self.shapes2_pushButton.setCheckable(True)
-        # self.shapes2_pushButton.setAutoExclusive(False)
-        # self.shapes2_pushButton.setFlat(True)
-        # self.shapes2_pushButton.setObjectName("shapes2_pushButton")
-        # self.verticalLayout_16.addWidget(self.shapes2_pushButton)
         self.verticalLayout_18.addLayout(self.verticalLayout_16)
         spacerItem3 = QtWidgets.QSpacerItem(17, 78, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.verticalLayout_18.addItem(spacerItem3)
@@ -1175,20 +848,9 @@ class Ui_AuraEdit(object):
         # Add the tools_widget_2 to the QScrollArea
         self.scroll_area_tools_2.setWidget(self.tools_widget_2)
         self.scroll_area_tools_2.setFixedWidth(260)
-#         self.scroll_area_tools_2.setStyleSheet("""
-#     QScrollArea {
-#         border: none;
-#     }
-# """)
-
- # Set the size policy of the widget inside the scroll area to not affect its width
         self.tools_widget_2.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)  # Fixed width, expanding height
-
-       
-
         # Add the scroll area to your layout (for example, a gridLayout)
         self.gridLayout.addWidget(self.scroll_area_tools_2, 0, 1, 1, 1)  # Adjus 
-
         # self.gridLayout.addWidget(self.tools_widget_2, 0, 1, 1, 1)
         self.main_window = QtWidgets.QWidget(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
@@ -1480,7 +1142,6 @@ class Ui_AuraEdit(object):
                            "QLabel{\n"
                            "color:white\n"
                            "}")
-
         self.label_6.setObjectName("label_6")
         self.horizontalLayout_4.addWidget(self.label_6)
 
@@ -1523,29 +1184,14 @@ class Ui_AuraEdit(object):
         self.horizontalLayout_6.setObjectName("horizontalLayout_6")
         spacerItem6 = QtWidgets.QSpacerItem(50, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_6.addItem(spacerItem6)
-        # self.graphicsView = QtWidgets.QGraphicsView(self.main_window)
-        # self.graphicsView.setMinimumSize(QtCore.QSize(1000, 650))
-        # font = QtGui.QFont()
-        # font.setFamily("Arial")
-        # self.graphicsView.setFont(font)
-        # self.graphicsView.setStyleSheet("padding-left:10px;")
-        # self.graphicsView.setObjectName("graphicsView")
-        # self.horizontalLayout_6.addWidget(self.graphicsView)
-      
         self.imageLabel = QtWidgets.QLabel(self.layoutWidget)
         self.imageLabel.setText("")
         self.imageLabel.setObjectName("imageLabel")
         # Set the size of the label to 600x600
         self.imageLabel.setFixedSize(1150, 760)
 
-        # Set the border color to white
-        # self.imageLabel.setStyleSheet("border: 2px solid white;")
-
         # Add the label to the layout
         self.horizontalLayout_6.addWidget(self.imageLabel)
-
-        
-
         spacerItem7 = QtWidgets.QSpacerItem(100, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_6.addItem(spacerItem7)
         self.verticalLayout_2.addLayout(self.horizontalLayout_6)
@@ -1560,19 +1206,10 @@ class Ui_AuraEdit(object):
         # Create a new layout for the scrollable content inside QScrollArea
         self.scroll_widget = QWidget()  # The widget inside the scroll area
         self.scroll_area.setWidget(self.scroll_widget)  # Set the widget inside the scroll area
-#         self.scroll_area.setStyleSheet("""
-#     QScrollArea {
-#         border: none;
-#     }
-# """)
         # Create a layout for the scrollable widget
         self.scroll_layout = QVBoxLayout(self.scroll_widget)
         self.scroll_layout.addWidget(self.main_window)  # Add your main widget to the scrollable layout
         self.gridLayout.addWidget(self.scroll_area, 0, 2, 1, 1)  # Add scroll area to the grid layout
-
-
-        # self.gridLayout.addWidget(self.main_window, 0, 2, 1, 1)
-
         AuraEdit.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(AuraEdit)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1930, 22))
@@ -1601,8 +1238,6 @@ QMenu::item:selected {
     border-radius:5px;
 }
 """)
-        
-
                 # Add the new property widget
         self.property_widget = QtWidgets.QWidget(self.centralwidget)
         self.property_widget.setObjectName("property_widget")
@@ -1633,9 +1268,6 @@ QMenu::item:selected {
 
         # Set up the central widget
         AuraEdit.setCentralWidget(self.centralwidget)
-
-        
-
 
         self.menuFile = QtWidgets.QMenu(self.menubar)
         font = QtGui.QFont()
@@ -1763,16 +1395,9 @@ QMenu::item:selected {
     def retranslateUi(self, AuraEdit):
         _translate = QtCore.QCoreApplication.translate
         AuraEdit.setWindowTitle(_translate("AuraEdit", "MainWindow"))
-        # self.size2_pushButton.setText(_translate("AuraEdit", "Size and Position"))
-        # self.move.setText(_translate("AuraEdit", "Move"))
-        # self.crop.setText(_translate("AuraEdit", "Crop"))
-        # self.resizing.setText(_translate("AuraEdit", "Resizing"))
         self.adjust2_pushButton.setText(_translate("AuraEdit", "Adjust"))
         self.brightness.setText(_translate("AuraEdit", "Brightness/Constrast"))
         self.saturation.setText(_translate("AuraEdit", "Saturation"))
-        # self.select2_pushButton.setText(_translate("AuraEdit", "Select"))
-        # self.select_subject.setText(_translate("AuraEdit", "Select Subject"))
-        # self.object_selection.setText(_translate("AuraEdit", "Object Selection"))
         self.retouch2_pushButton.setText(_translate("AuraEdit", "Retouch"))
         self.lighten.setText(_translate("AuraEdit", "Lighten"))
         self.darken.setText(_translate("AuraEdit", "Darken"))
@@ -1787,7 +1412,6 @@ QMenu::item:selected {
         self.rotation.setText(_translate("AuraEdit", "Rotation"))
         self.translation.setText(_translate("AuraEdit", "Translation"))
         self.text2_PushButton.setText(_translate("AuraEdit", "Text"))
-        # self.shapes2_pushButton.setText(_translate("AuraEdit", "Shapes"))
         self.pushButton.setToolTip(_translate("AuraEdit", "Zoom in"))
         self.pushButton_2.setToolTip(_translate("AuraEdit", "Zoom in"))
         self.pushButton_3.setToolTip(_translate("AuraEdit", "Zoom in"))
