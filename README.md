@@ -20,8 +20,8 @@ AuraEdit is a desktop image processing application built using **PyQt5** and des
 ![Main Window](image.png)  
 *Main application window*
 
-![Filter Dialog](image.png)  
-*Filter parameter adjustment pop-up*
+![Filter](Filter.png)  
+*Filter and filter parameter adjustment*
 
 
 ## Installation
