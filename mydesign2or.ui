@@ -1,0 +1,3306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AuraEdit</class>
+ <widget class="QMainWindow" name="AuraEdit">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1978</width>
+    <height>1001</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(53, 53, 53);
+QMenuBar::item {
+    color: white; /* Set the color of the menu text */
+}
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <widget class="QWidget" name="main_window" native="true">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>0</y>
+      <width>490</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(70,70,70);</string>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_15">
+       <item>
+        <widget class="QWidget" name="zoom_menu" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>470</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+	color: rgb(255, 255, 255);
+	background-color: rgb(53, 53, 53);
+}</string>
+         </property>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QPushButton" name="pushButton_38">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+
+}
+QPushButton{
+border:none;
+}
+
+</string>
+             </property>
+             <property name="text">
+              <string notr="true"/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>icon/icons8-menu-30.png</normaloff>icon/icons8-menu-30.png</iconset>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+             <property name="autoDefault">
+              <bool>false</bool>
+             </property>
+             <property name="default">
+              <bool>false</bool>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton">
+             <property name="toolTip">
+              <string>Zoom in</string>
+             </property>
+             <property name="toolTipDuration">
+              <number>2</number>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+
+}
+QPushButton{
+border:none;
+}
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>icon/icons8-zoom-in-30.png</normaloff>icon/icons8-zoom-in-30.png</iconset>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="toolTip">
+              <string>Zoom in</string>
+             </property>
+             <property name="toolTipDuration">
+              <number>2</number>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+
+}
+QPushButton{
+border:none;
+}
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>icon/icons8-zoom-out-24.png</normaloff>icon/icons8-zoom-out-24.png</iconset>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="toolTip">
+              <string>Zoom in</string>
+             </property>
+             <property name="toolTipDuration">
+              <number>2</number>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+
+}
+QPushButton{
+border:none;
+}
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>icon/icons8-reset-50.png</normaloff>icon/icons8-reset-50.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>14</width>
+               <height>14</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="pushButton_20">
+           <property name="minimumSize">
+            <size>
+             <width>60</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>60</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>6</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButtons:checked{
+background-color:white;
+border:none;
+}
+QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+
+color:white;
+}</string>
+           </property>
+           <property name="text">
+            <string>Properties</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>icon/icons8-properties-script-50.png</normaloff>
+             <normalon>icon/icons8-forward-24 (1).png</normalon>icon/icons8-properties-script-50.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>12</width>
+             <height>12</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_2">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_21">
+            <property name="spacing">
+             <number>5</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <widget class="QLabel" name="label_7">
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>6</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel:hover{
+	color: rgb(255, 167, 135);
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QLabel{
+color:white
+}</string>
+                </property>
+                <property name="text">
+                 <string>Name</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit">
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>6</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(53, 53, 53);
+border:none;
+color:white;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QLabel" name="label_5">
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>6</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel:hover{
+	color: rgb(255, 167, 135);
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QLabel{
+color:white
+}</string>
+                </property>
+                <property name="text">
+                 <string>Width</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_7">
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>6</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(53, 53, 53);
+border:none;
+color:white;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_4">
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>6</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel:hover{
+	color: rgb(255, 167, 135);
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QLabel{
+color:white
+}</string>
+                </property>
+                <property name="text">
+                 <string>Height</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_2">
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>6</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(53, 53, 53);
+border:none;
+color:white;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_6">
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>6</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel:hover{
+	color: rgb(255, 167, 135);
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QLabel{
+color:white
+}</string>
+                </property>
+                <property name="text">
+                 <string>Format</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_8">
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>6</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(53, 53, 53);
+border:none;
+color:white;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>18</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>18</width>
+           <height>60</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>38</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QGraphicsView" name="graphicsView">
+           <property name="font">
+            <font>
+             <family>Arial</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">padding-left:10px;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>38</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>17</width>
+           <height>158</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="tools_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>40</width>
+      <height>940</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>40</width>
+      <height>940</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>40</width>
+      <height>940</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: rgb(53, 53, 53);
+}</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_22">
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>2</width>
+         <height>2</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="logo1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QLabel{
+   height:10px;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>logo.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_17">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>10</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="size1_pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+	background-color: rgb(53, 53, 53);
+}
+QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+    height:10px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>icon/selectcursor.png</normaloff>icon/selectcursor.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>12</width>
+           <height>12</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="adjust1_pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>icon/adjust.png</normaloff>icon/adjust.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>12</width>
+           <height>12</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="select1_pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>icon/icons8-page-size-50.png</normaloff>icon/icons8-page-size-50.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>12</width>
+           <height>12</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="retouch1_pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>icon/square.png</normaloff>icon/square.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>12</width>
+           <height>12</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="quickaction1_pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>icon/booster.png</normaloff>icon/booster.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>12</width>
+           <height>12</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="paint1_pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>icon/paint.png</normaloff>icon/paint.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>12</width>
+           <height>12</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="transform1_pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>icon/transform.png</normaloff>icon/transform.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>12</width>
+           <height>12</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="text1_pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>icon/text (2).png</normaloff>icon/text (2).png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>12</width>
+           <height>12</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="shape1_pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>icon/shapes.png</normaloff>icon/shapes.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>12</width>
+           <height>12</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_7">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>88</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="tools_widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>0</y>
+      <width>160</width>
+      <height>940</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>160</width>
+      <height>940</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>160</width>
+      <height>940</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	color: rgb(255, 255, 255);
+	background-color: rgb(53, 53, 53);
+}
+QPushBotton{
+   height:10px;
+   border:none;
+}</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_18">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="logo2">
+         <property name="minimumSize">
+          <size>
+           <width>25</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>25</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+Qlabel{
+height:10px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>logo.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="logo_name">
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>logo_n.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_7">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>38</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_16">
+       <property name="spacing">
+        <number>16</number>
+       </property>
+       <property name="topMargin">
+        <number>10</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="size_frame_2">
+         <property name="font">
+          <font>
+           <family>Arial</family>
+          </font>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="size2_pushButton">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>6</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+border:none;
+ outline: none;
+}
+QPushButton {
+    height:10px;
+    text-align: left;}
+QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}</string>
+            </property>
+            <property name="text">
+             <string>Size and Position</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/selectcursor.png</normaloff>
+              <normalon>icon/icons8-chevron-24.png</normalon>icon/selectcursor.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>12</width>
+              <height>12</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="size_dropdown">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="move">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>6</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    text-align: left;
+    padding-left: 25px; /* Optional: Adjust padding as needed */
+     height:10px;
+}
+QPushButton:hover{
+	color: rgb(255, 167, 135);
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+               </property>
+               <property name="text">
+                <string>Move</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/icons8-move-30.png</normaloff>icon/icons8-move-30.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>12</width>
+                 <height>12</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="crop">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>6</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+     height:10px;
+    text-align: left;
+    padding-left: 25px; /* Optional: Adjust padding as needed */
+}
+
+QPushButton:hover{
+	color: rgb(255, 167, 135);
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+               </property>
+               <property name="text">
+                <string>Crop</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/icons8-crop-50.png</normaloff>icon/icons8-crop-50.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>12</width>
+                 <height>12</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="resizing">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>6</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    text-align: left;
+    padding-left: 25px; /* Optional: Adjust padding as needed */
+    height:10px;
+}
+QPushButton:hover{
+	color: rgb(255, 167, 135);
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+               </property>
+               <property name="text">
+                <string>Resizing</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/icons8-resize-50.png</normaloff>icon/icons8-resize-50.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>12</width>
+                 <height>12</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="Adjust_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="adjust2_pushButton">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>6</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton {
+    text-align: left;
+}
+QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+            </property>
+            <property name="text">
+             <string>Adjust</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/adjust.png</normaloff>
+              <normalon>icon/icons8-chevron-24.png</normalon>icon/adjust.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>12</width>
+              <height>12</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="adjust_dropdown">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="brightness">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>6</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    text-align: left;
+    padding-left: 25px; /* Optional: Adjust padding as needed */
+     height:10px;
+}
+QPushButton:hover{
+	color: rgb(255, 167, 135);
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+               </property>
+               <property name="text">
+                <string>Brightness/Constrast</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/icons8-brightness-50.png</normaloff>icon/icons8-brightness-50.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>12</width>
+                 <height>12</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="saturation">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>6</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    text-align: left;
+    padding-left: 25px; /* Optional: Adjust padding as needed */
+}
+
+QPushButton:hover{
+	color: rgb(255, 167, 135);
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+               </property>
+               <property name="text">
+                <string>Saturation</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/icons8-saturation-50.png</normaloff>icon/icons8-saturation-50.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>12</width>
+                 <height>12</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="select_frame_8">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_19">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="select2_pushButton">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>6</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    text-align: left;}
+QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+            </property>
+            <property name="text">
+             <string>Select</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/icons8-page-size-50.png</normaloff>
+              <normalon>icon/icons8-chevron-24.png</normalon>icon/icons8-page-size-50.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>12</width>
+              <height>12</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>true</bool>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="select_dropdown">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="select_subject">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>6</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    text-align: left;
+    padding-left: 25px; /* Optional: Adjust padding as needed */
+}
+QPushButton:hover{
+	color: rgb(255, 167, 135);
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+               </property>
+               <property name="text">
+                <string>Select Subject</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/icons8-invert-selection-30.png</normaloff>icon/icons8-invert-selection-30.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>12</width>
+                 <height>12</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="object_selection">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>6</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    text-align: left;
+    padding-left: 25px; /* Optional: Adjust padding as needed */
+}
+QPushButton:hover{
+	color: rgb(255, 167, 135);
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+               </property>
+               <property name="text">
+                <string>Object Selection</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/icons8-object-rotation-50.png</normaloff>icon/icons8-object-rotation-50.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>12</width>
+                 <height>12</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="retouch_frame_9">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_13">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="retouch2_pushButton">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>6</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    text-align: left;}
+
+QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+            </property>
+            <property name="text">
+             <string>Retouch</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/square.png</normaloff>
+              <normalon>icon/icons8-chevron-24.png</normalon>icon/square.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>12</width>
+              <height>12</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>true</bool>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="retouch_dropdown">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="lighten">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>6</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    text-align: left;
+    padding-left: 25px; /* Optional: Adjust padding as needed */
+}
+QPushButton:hover{
+	color: rgb(255, 167, 135);
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+               </property>
+               <property name="text">
+                <string>Lighten</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/icons8-color-wheel-32.png</normaloff>icon/icons8-color-wheel-32.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>12</width>
+                 <height>12</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="darken">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>6</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    text-align: left;
+    padding-left: 25px; /* Optional: Adjust padding as needed */
+}
+
+QPushButton:hover{
+	color: rgb(255, 167, 135);
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+               </property>
+               <property name="text">
+                <string>Darken</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/icons8-color-mode-24.png</normaloff>icon/icons8-color-mode-24.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>12</width>
+                 <height>12</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="quickaction_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_11">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="quickactions2_pushButton">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>6</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    text-align: left;}
+QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+            </property>
+            <property name="text">
+             <string>Quick actions</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/booster.png</normaloff>
+              <normalon>icon/icons8-chevron-24.png</normalon>icon/booster.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>12</width>
+              <height>12</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>true</bool>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="quickaction_dropdown">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_10">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="remove_bg">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>6</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    text-align: left;
+    padding-left: 25px; /* Optional: Adjust padding as needed */
+}
+QPushButton:hover{
+	color: rgb(255, 167, 135);
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+               </property>
+               <property name="text">
+                <string>Remove Background</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/icons8-remove-document-32.png</normaloff>icon/icons8-remove-document-32.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>12</width>
+                 <height>12</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="blur_bg">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>6</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    text-align: left;
+    padding-left: 25px; /* Optional: Adjust padding as needed */
+}
+QPushButton:hover{
+	color: rgb(255, 167, 135);
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+               </property>
+               <property name="text">
+                <string>Blur Background</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/icons8-blur-30.png</normaloff>icon/icons8-blur-30.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>12</width>
+                 <height>12</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="blackwhite_bg">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>6</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    text-align: left;
+    padding-left: 25px; /* Optional: Adjust padding as needed */
+}
+QPushButton:hover{
+	color: rgb(255, 167, 135);
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+               </property>
+               <property name="text">
+                <string>Black/white background</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/icons8-background-remover-50.png</normaloff>icon/icons8-background-remover-50.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>12</width>
+                 <height>12</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="paint_frame_12">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="paint2_pushButton">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>6</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    text-align: left;}
+QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+            </property>
+            <property name="text">
+             <string>Paint</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/paint.png</normaloff>
+              <normalon>icon/icons8-chevron-24.png</normalon>icon/paint.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>12</width>
+              <height>12</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>true</bool>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="paint_dropdown">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_12">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="brush">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>6</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    text-align: left;
+    padding-left: 25px; /* Optional: Adjust padding as needed */
+}
+QPushButton:hover{
+	color: rgb(255, 167, 135);
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+               </property>
+               <property name="text">
+                <string>Brush</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/icons8-brush-50.png</normaloff>icon/icons8-brush-50.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>12</width>
+                 <height>12</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="eraser">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>6</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    text-align: left;
+    padding-left: 25px; /* Optional: Adjust padding as needed */
+}
+QPushButton:hover{
+	color: rgb(255, 167, 135);
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+               </property>
+               <property name="text">
+                <string>Eraser</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/icons8-eraser-30.png</normaloff>icon/icons8-eraser-30.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>12</width>
+                 <height>12</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="transform_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_20">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="transform2_pushButton">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>6</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    text-align: left;}
+QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+            </property>
+            <property name="text">
+             <string>Transforms</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/transform.png</normaloff>
+              <normalon>icon/icons8-chevron-24.png</normalon>icon/transform.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>12</width>
+              <height>12</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>true</bool>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="transform_dropdown">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_14">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="rotation">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>6</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    text-align: left;
+    padding-left: 25px; /* Optional: Adjust padding as needed */
+}
+QPushButton:hover{
+	color: rgb(255, 167, 135);
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+               </property>
+               <property name="text">
+                <string>Rotation</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/icons8-rotate-50.png</normaloff>icon/icons8-rotate-50.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>12</width>
+                 <height>12</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="translation">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>6</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    text-align: left;
+    padding-left: 25px; /* Optional: Adjust padding as needed */
+}
+QPushButton:hover{
+	color: rgb(255, 167, 135);
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+}</string>
+               </property>
+               <property name="text">
+                <string>Translation</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/icons8-invert-selection-30.png</normaloff>icon/icons8-invert-selection-30.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>12</width>
+                 <height>12</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="text2_PushButton">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>6</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    text-align: left;}
+QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+
+
+}</string>
+         </property>
+         <property name="text">
+          <string>Text</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>icon/text (2).png</normaloff>icon/text (2).png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>12</width>
+           <height>12</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="shapes2_pushButton">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>6</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    text-align: left;}
+QPushButton:hover{
+	background-color: rgb(80, 80, 80);
+   border-radius:5px;
+}
+QPushButton{
+border:none;
+ outline: none;
+
+}</string>
+         </property>
+         <property name="text">
+          <string>Shapes</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>icon/shapes.png</normaloff>icon/shapes.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>12</width>
+           <height>12</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>17</width>
+         <height>78</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QScrollBar" name="verticalScrollBar">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>0</y>
+      <width>16</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1978</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionNew"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_as"/>
+    <addaction name="actionClose"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionCut"/>
+    <addaction name="actionCopy"/>
+    <addaction name="actionPaste"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>Filters</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionGuassian_blur"/>
+    <addaction name="actionNoise"/>
+    <addaction name="actionDistort"/>
+    <addaction name="actionSharpen"/>
+    <addaction name="actionSketch"/>
+    <addaction name="actionMean_Filter"/>
+    <addaction name="actionEdge_Detection"/>
+    <addaction name="actionBrightness_and_Constrast"/>
+    <addaction name="actionSaturation"/>
+    <addaction name="actionThresholding"/>
+   </widget>
+   <widget class="QMenu" name="menuWindow">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionTools"/>
+    <addaction name="actionPropertiies"/>
+    <addaction name="actionMain_Window"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout_3"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuAbout"/>
+   <addaction name="menuWindow"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="text">
+    <string>Save as</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="text">
+    <string>Cut</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="text">
+    <string>Paste</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>Grayscale Filter</string>
+   </property>
+  </action>
+  <action name="actionFind">
+   <property name="text">
+    <string>Find</string>
+   </property>
+  </action>
+  <action name="actionFind_next">
+   <property name="text">
+    <string>Find next</string>
+   </property>
+  </action>
+  <action name="actionReplace">
+   <property name="text">
+    <string>Replace</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionAbout_2">
+   <property name="text">
+    <string>About </string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>About</string>
+   </property>
+   <property name="iconText">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionGuassian_blur">
+   <property name="text">
+    <string>Guassian Blur</string>
+   </property>
+  </action>
+  <action name="actionNoise">
+   <property name="text">
+    <string>Noise</string>
+   </property>
+  </action>
+  <action name="actionDistort">
+   <property name="text">
+    <string>Distort</string>
+   </property>
+  </action>
+  <action name="actionSharpen">
+   <property name="text">
+    <string>Sharpen</string>
+   </property>
+  </action>
+  <action name="actionSketch">
+   <property name="text">
+    <string>Sketch</string>
+   </property>
+  </action>
+  <action name="actionMean_Filter">
+   <property name="text">
+    <string>Mean Filter</string>
+   </property>
+  </action>
+  <action name="actionEdge_Detection">
+   <property name="text">
+    <string>Edge Detection</string>
+   </property>
+  </action>
+  <action name="actionBrightness_and_Constrast">
+   <property name="text">
+    <string>Brightness and Constrast</string>
+   </property>
+  </action>
+  <action name="actionSaturation">
+   <property name="text">
+    <string>Saturation Adjustment</string>
+   </property>
+  </action>
+  <action name="actionThresholding">
+   <property name="text">
+    <string>Thresholding</string>
+   </property>
+  </action>
+  <action name="actionAbout_3">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionTools">
+   <property name="text">
+    <string>Tools</string>
+   </property>
+  </action>
+  <action name="actionPropertiies">
+   <property name="text">
+    <string>Properties</string>
+   </property>
+  </action>
+  <action name="actionMain_Window">
+   <property name="text">
+    <string>Main Window</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>text2_PushButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>text1_pushButton</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>509</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>34</x>
+     <y>318</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>shapes2_pushButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>shape1_pushButton</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>537</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>31</x>
+     <y>347</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>size2_pushButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>size1_pushButton</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>166</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>34</x>
+     <y>115</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quickactions2_pushButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>quickaction1_pushButton</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>330</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>34</x>
+     <y>231</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>adjust2_pushButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>adjust1_pushButton</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>164</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>34</x>
+     <y>144</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>paint2_pushButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>paint1_pushButton</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>398</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>34</x>
+     <y>260</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>transform2_pushButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>transform_dropdown</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>454</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>195</x>
+     <y>480</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>size2_pushButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>size_dropdown</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>166</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>139</x>
+     <y>134</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>transform2_pushButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>transform1_pushButton</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>454</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>34</x>
+     <y>289</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quickactions2_pushButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>quickaction_dropdown</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>330</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>195</x>
+     <y>368</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>select2_pushButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>select1_pushButton</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>218</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>34</x>
+     <y>173</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>adjust2_pushButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>adjust_dropdown</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>164</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>182</x>
+     <y>172</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>retouch2_pushButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>retouch_dropdown</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>274</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>195</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>paint2_pushButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>paint_dropdown</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>398</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>195</x>
+     <y>424</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>select2_pushButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>select_dropdown</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>218</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>195</x>
+     <y>244</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>retouch2_pushButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>retouch1_pushButton</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>274</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>34</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_38</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>tools_widget_2</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>230</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>198</x>
+     <y>108</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_38</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>tools_widget</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>221</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>32</x>
+     <y>103</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_20</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>frame_2</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>299</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>307</x>
+     <y>96</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
