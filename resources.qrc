@@ -1,0 +1,13 @@
+<RCC>
+  <qresource>
+    <file>icon/adjust.png</file>
+    <file>icon/booster.png</file>
+    <file>icon/icons8-select-cursor-24.png</file>
+    <file>icon/paint.png</file>
+    <file>icon/selectcursor.png</file>
+    <file>icon/shapes.png</file>
+    <file>icon/square.png</file>
+    <file>icon/text (2).png</file>
+    <file>icon/transform.png</file>
+  </qresource>
+</RCC>
